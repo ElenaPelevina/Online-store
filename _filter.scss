@@ -1,0 +1,302 @@
+.filter {
+    display:flex
+}
+.filter__box {
+    background-color: rgb(255, 255, 255);
+    position:absolute;
+    z-index: 1;
+    top: calc(100% + 14px);
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 48px;
+    column-gap: 65px;
+    box-sizing: border-box;
+    min-width: 541px;
+    max-height: 548px;
+    box-shadow: 0px 4px 67px -12px rgba(0, 0, 0, 0.32);
+
+}
+
+.filter__button {
+    color: rgb(2, 2, 2);
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    background-color: transparent;
+    padding: 10px;
+    max-width: 190px;
+    margin-top: 60px;
+    transition: 1s;
+}
+
+.filter__button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.filter__box1 {
+    grid-area: 1 span;
+    display: flex;
+    row-gap: 32px;
+    flex-direction: column;
+    max-width: 191px;
+}
+.filter__box2 {
+    display: flex;
+    row-gap: 32px;
+    flex-direction: column;
+    max-width: 191px;
+}
+
+.filter__fieldset {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    font-size: 14px;
+}
+input[type="radio"] {
+    display: none;
+ }
+input[type="radio"] + label {
+    position: relative; 
+    padding-left: 29px; 
+    cursor: pointer; 
+}
+input[type="radio"] + label:before {
+   content:'';
+   position: absolute;
+   left: 0; 
+   top: 50%; 
+   transform: translateY(-50%); 
+   width: 15px;  
+   height: 15px; 
+   border: 1px solid rgb(136, 136, 136);
+   border-radius: 50%;    
+   background: #ffffff;
+}  
+
+input[type="radio"]:checked + label::before {
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    background-image: url(images/radio.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.filter__rangelabel {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.filter__range {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.filter__rangeline {
+    width: 190px;
+    height: 10px;
+    overflow: hidden;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    background: none;
+}
+.filter__rangeline::-webkit-slider-runnable-track,
+.filter__rangeline::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: none;
+}
+.filter__rangeline::-webkit-slider-runnable-track {
+    width: 191px;
+    height: 1px;
+    background: black;
+}
+.filter__rangeline:nth-child(2)::-webkit-slider-runnable-track {
+    background: none;
+}
+.filter__rangeline::-webkit-slider-thumb {
+    position: relative;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-top: -0.25em;
+    background: black;
+    border: 1px solid black;
+    cursor: pointer;
+    z-index: 1;
+}
+.filter__rangeline::-webkit-slider-thumb:active {
+    cursor: grab;
+}
+.filter__rangeline:nth-child(1)::-webkit-slider-thumb {
+    z-index: 2;
+}
+.filter__rangestyle {
+  height: 10px; 
+}
+.filter__rangestyle input {
+    position: absolute;
+}
+
+.filter__colorbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 14px;
+    row-gap: 14px;
+}
+input[type="checkbox"] {
+    display: none;
+ }
+ input[type="checkbox"] + label {
+    position: relative;
+    cursor: pointer;
+ }
+
+ input[type="checkbox"] + label:before {
+    content:'';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+ }
+
+ input[type="checkbox"]:checked + label::before {
+    background-image: url(images/radio.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.filter__colors {
+padding-right: 15px;
+}
+.filter__white + .filter__colors::before {
+background-color: white;
+border: 1px solid rgb(136, 136, 136);
+}
+
+.filter__black +label:before {
+    background-color: black;
+    border: 1px solid black;
+}
+
+.filter__grey +label:before {
+    background-color: rgb(115, 115, 115);
+    border: 1px solid rgb(115, 115, 115);
+}
+
+.filter__red +label:before {
+    background-color:rgb(255, 0, 0);
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.filter__orange +label:before {
+    background-color:rgb(255, 122, 65);
+    border: 1px solid rgb(255, 122, 65);
+}
+
+.filter__yellow +label:before {
+    background-color:rgb(242, 203, 1);
+    border: 1px solid rgb(242, 203, 1);
+}
+
+.filter__green +label:before {
+    background-color:rgb(0, 191, 42);
+    border: 1px solid rgb(0, 191, 42);
+}
+
+.filter__lightgreen +label:before {
+    background-color:rgb(28, 204, 151);
+    border: 1px solid rgb(28, 204, 151);
+}
+
+.filter__blue +label:before {
+    background-color:rgb(0, 159, 227);
+    border: 1px solid rgb(0, 159, 227);
+}
+
+.filter__darkblue + label:before {
+    background-color:rgb(0, 10, 248);
+    border: 1px solid rgb(0, 10, 248);
+}
+
+.filter__violet + label:before {
+    background-color:rgb(103, 16, 214);
+    border: 1px solid rgb(103, 16, 214);
+}
+
+.filter__violet2 + label:before {
+    background-color:rgb(157, 13, 181);
+    border: 1px solid rgb(157, 13, 181);
+}
+
+.filter__lightviolet + label:before {
+    background-color:rgb(216, 154, 255);
+    border: 1px solid rgb(216, 154, 255);
+}
+
+.filter__pink + label:before {
+    background-color:rgb(255, 101, 166);
+    border: 1px solid rgb(255, 101, 166);
+}
+
+input[type="checkbox"]:checked + label::before {
+    background-image: url(images/radio.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(0, 0, 0);
+}
+input[type="checkbox"]:checked + .filter__colors_whitestyle::before {
+    background-image: url('data:image/svg+xml,\
+    <svg width="7.300781" height="7.067688" viewBox="0 0 7.30078 7.06769" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">\
+	<path id="Vector 1" d="M0.35 2.72L3.85 6.22L6.85 0.22" stroke="white" stroke-opacity="1.000000" stroke-width="1.000000"/>\
+</svg>');
+}
+
+.filter__type + label {
+    padding-left: 29px;
+}
+
+.filter__type + label:before {
+    left: 0; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    border: 1px solid rgb(136, 136, 136);
+    background: #fff;
+}
+
+legend {
+    color: rgb(5, 5, 5);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+label {
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: left;
+}
