@@ -1,6 +1,6 @@
 # Онлайн магазин мебели
 
-Учебный проект для изучения основ **HTML**, **CSS**, освоения работы препроцессоров, особенностей адаптивной верстки. Создан по макету **Figma**.
+Учебный проект для изучения основ **HTML**, **CSS**, освоения работы препроцессора (**SCSS**), особенностей адаптивной верстки. Создан по макету **Figma**.
 Сайт состоит из трех страниц: 
 * Главная ([index.html](https://github.com/ElenaPelevina/Online-store/blob/main/index.html))
 * Каталог ([catalog.html](https://github.com/ElenaPelevina/Online-store/blob/main/catalog.html))
