@@ -4,7 +4,7 @@
 Сайт состоит из трех страниц: 
 * Главная ([index.html](https://github.com/ElenaPelevina/Online-store/blob/main/index.html))
 * Каталог ([catalog.html](https://github.com/ElenaPelevina/Online-store/blob/main/catalog.html))
-* Корзина ([cart.html](https://github.com/ElenaPelevina/Online-store/blob/main/catalog.html)).
+* Корзина ([cart.html](https://github.com/ElenaPelevina/Online-store/blob/main/cart.html).
 
 На странице **Каталога** сверстана в соотвествиии с дизайном макета форма фильтрации и всплавающее окно **Корзины**.\
 Реализован адаптив сайта для планшетов и мобильных телефонов в соотвествии с макетом, оптимизированы изображения для ускорения загрузки сайта.
