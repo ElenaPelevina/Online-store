@@ -15,4 +15,4 @@
 
 ### Ссылка
 
-Ознакомиться с сайтом можно по ссылке: [Online store](http://t92682e1.beget.tech/index.html)
+Ознакомиться с сайтом можно по ссылке: [Online store](https://elenapelevina.github.io/Online-store/)
